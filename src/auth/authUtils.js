@@ -55,7 +55,6 @@ const authentication = async (req, res, next) => {
   if (!accessToken) throw new AuthFailureError("Invalid Request");
 
   try {
-    console.log("hello");
     const decodeUser = JWT.verify(accessToken, keyStore.publicKey);
     console.log("🚀 ~ authentication ~ decodeUser:", decodeUser);
     if (userId !== decodeUser.userId)
