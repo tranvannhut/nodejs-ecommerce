@@ -1,0 +1,25 @@
+### login
+@url_dev=http://localhost:3052/v1/api  
+POST {{url_dev}}/product
+Content-Type: application/json
+x-api-key: 6da6020d83aae730d3bacd0b9989b62af518248a37734c8757603d9e66c691431d323070303ddf91463935aae0c4615d6527aeb92b72527c04de7a4086cc30c5
+x-client-id : 65acc1c81bcb06f7ed04f7df
+x-access-token : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWFjYzFjODFiY2IwNmY3ZWQwNGY3ZGYiLCJlbWFpbCI6InNob3BBOUBnbWFpbC5jb20iLCJpYXQiOjE3MDYzNTA1NTIsImV4cCI6MTcwNjUyMzM1Mn0.IHcU91t_Wxn1FnkCAUIGXjPB_DrM778Bz2r-yQSYQRk
+
+{
+    "productName" : "Lamp 2 color black",
+    "productThumb" : "https://www.google.com/imgres?imgurl=https%3A%2F%2Fimages.unsplash.com%2Fphoto-1523275335684-37898b6baf30%3Fq%3D80%26w%3D1000%26auto%3Dformat%26fit%3Dcrop%26ixlib%3Drb-4.0.3%26ixid%3DM3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZHVjdHxlbnwwfHwwfHx8MA%253D%253D&tbnid=TInYQSGcrLQY4M&vet=12ahUKEwjVk-6C8veDAxXgka8BHSmCBVAQMygAegQIARBz..i&imgrefurl=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fproduct&docid=Bfa8p_BERHYMYM&w=1000&h=726&q=image%20product%20image&ved=2ahUKEwjVk-6C8veDAxXgka8BHSmCBVAQMygAegQIARBz",
+    "productDescription": "description product",
+    "productPrice":5000,
+    "productQuantity":12,
+    "productType" : "Furniture",
+    "productShop" : "65acc229944b3f85b6175b8f",
+    "productAttributes": {
+        "brand":"Level 3",
+        "size": "XL",
+        "material":"Demin"
+    }
+}
+
+
+

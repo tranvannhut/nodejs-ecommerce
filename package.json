@@ -8,7 +8,14 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "format:check": "prettier --check .",
+    "format:write": "prettier --write .",
+    "lint": "eslint --ext js,jsx src/",
+    "lint:fix": "eslint --fix --ext js,jsx src/",
+    "debug": "nodemon --inspect server.js",
+    "nfrun": "nf run node server.js -e .env",
+    "serverjs": "node server.js",
+    "start": "nodemon --legacy-watch --delay 5000ms --exec \"npm run lint & npm run serverjs \""
   },
   "keywords": [],
   "author": "",
@@ -24,6 +31,23 @@
     "jsonwebtoken": "^9.0.2",
     "lodash": "^4.17.21",
     "mongoose": "^8.1.0",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "slugify": "^1.6.6"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-find-rules": "^4.1.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-restricted-globals": "^0.2.0",
+    "husky": "^7.0.4",
+    "nodemon": "^3.0.3",
+    "prettier": "^3.2.4"
+  },
+  "prettier": {
+    "singleQuote": true
   }
 }
