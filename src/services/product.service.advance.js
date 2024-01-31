@@ -21,6 +21,7 @@ const {
   removeObjectNullOrUndefined,
   updateNestedObjectParse,
 } = require('../utils');
+const { insertInventory } = require('../repositories/inventory.repo');
 // define Factory class to create
 class ProductFactory {
   static productRegistry = {}; // key -class
@@ -103,7 +104,21 @@ class Product {
   }
   // create new product
   async createProduct(productId) {
-    return await product.create({ ...this, _id: productId });
+    // return await product.create({ ...this, _id: productId });
+    const newProduct = await product.create({ ...this, _id: productId });
+    if (newProduct) {
+      // add productStock in inventory collection
+      // productId,
+      // shopId,
+      // stock,
+      // location = 'unknow'
+      await insertInventory({
+        productId: newProduct._id,
+        shopId: this.productShop,
+        stock: this.productQuantity,
+      });
+    }
+    return newProduct;
   }
   async updateProduct(productId, bodyUpdate) {
     return await updateProductById({ productId, bodyUpdate, model: product });

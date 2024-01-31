@@ -2,11 +2,11 @@
 @url_dev=http://localhost:3052/v1/api
 POST {{url_dev}}/shop/login
 Content-Type: application/json
-x-api-key: 6da6020d83aae730d3bacd0b9989b62af518248a37734c8757603d9e66c691431d323070303ddf91463935aae0c4615d6527aeb92b72527c04de7a4086cc30c5
-# x-client-id : 65acc1c81bcb06f7ed04f7df
+x-api-key: eb13f5ba9c630690d727366e3ed642ec3544c16f0d49b17c9944fc393fdbea7700dfecb1ed77a5d811bf1441092e787227e2056733a52f208c0449122cac9a47
+# x-client-id : 65b8669e984e8bd12f27664b
 
 {
-    "email" : "shopA9@gmail.com",
+    "email" : "shopA1@gmail.com",
     "password" : "123abc"
 }
 

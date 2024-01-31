@@ -1,0 +1,28 @@
+### login
+@url_dev=http://localhost:3052/v1/api  
+POST {{url_dev}}/discount/amount
+Content-Type: application/json
+x-api-key: eb13f5ba9c630690d727366e3ed642ec3544c16f0d49b17c9944fc393fdbea7700dfecb1ed77a5d811bf1441092e787227e2056733a52f208c0449122cac9a47
+x-client-id : 65b8669e984e8bd12f27664b
+x-access-token : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWI4NjY5ZTk4NGU4YmQxMmYyNzY2NGIiLCJlbWFpbCI6InNob3BBMUBnbWFpbC5jb20iLCJpYXQiOjE3MDY2MDkwNjMsImV4cCI6MTcwNjc4MTg2M30.w-39baSwTmLV4aH8cgpU4KexoQHxsdwMvAmjhoonOuo
+
+{
+      "code":"Shop ABC 10%",
+      "userId": 2,
+      "shopId":"65b8669e984e8bd12f27664b",
+      "products": [
+            {
+                  "productId": "65b8ca0cf7e251e6c6337777",
+                  "quantity":5,
+                  "price":120000
+            },
+            {
+                  "productId": "65b8c9cdf7e251e6c633776f",
+                  "quantity":1,
+                  "price":100000
+            }
+      ]
+}
+
+
+

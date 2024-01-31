@@ -2,11 +2,11 @@
 @url_dev=http://localhost:3052/v1/api
 POST {{url_dev}}/shop/signup
 Content-Type: application/json
-x-api-key:78cacd718acc0a8d79873c375b52a39271fd99b43dd65ec2781d66c21cad9bfb5f1e7b4a32dcca6fd9e8890f51902beb419a1214477a6fa41719d029f2cfb2c6
+x-api-key:eb13f5ba9c630690d727366e3ed642ec3544c16f0d49b17c9944fc393fdbea7700dfecb1ed77a5d811bf1441092e787227e2056733a52f208c0449122cac9a47
 
 {
-    "name" : "ShopA10",
-    "email" : "shopA10@gmail.com",
+    "name" : "ShopA1",
+    "email" : "shopA1@gmail.com",
     "password" : "123abc"
 }
 

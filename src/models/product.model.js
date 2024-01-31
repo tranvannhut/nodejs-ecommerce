@@ -2,7 +2,7 @@
 const { Schema, model } = require('mongoose');
 
 const DOCUMENT_NAME = 'Product';
-const COLLECTION_NAME = 'Products';
+const COLLECTION_NAME = 'products';
 const slugify = require('slugify');
 const productSchema = new Schema(
   {
@@ -18,7 +18,7 @@ const productSchema = new Schema(
     },
     productShop: { type: String, type: Schema.Types.ObjectId, ref: 'Shop' },
     productAttributes: { type: Schema.Types.Mixed, require: true },
-    productSlug: String, // quan-jean-cap-cap
+    productSlug: String, // quan-jean-cao-cap
     productRatingsAverage: {
       type: Number,
       default: 4.5,
