@@ -6,7 +6,11 @@ const {
   clothing,
   furniture,
 } = require('../models/product.model');
-const { getSelectData, unGetSelectData } = require('../utils');
+const {
+  getSelectData,
+  unGetSelectData,
+  convertToObjectIdMongo,
+} = require('../utils');
 const getAllDraftForShop = async ({ query, limit, skip }) => {
   return await queryProduct({ query, limit, skip });
 };
@@ -67,7 +71,12 @@ const findAllProduct = async ({ filter, sort, limit, page, select }) => {
 const findProductById = async ({ productId, unSelect }) => {
   return await product.findOne({ productId }).select(unGetSelectData(unSelect));
 };
-const updateProductById = async ({ productId, bodyUpdate, model, isNew = true }) => {
+const updateProductById = async ({
+  productId,
+  bodyUpdate,
+  model,
+  isNew = true,
+}) => {
   return await model.findByIdAndUpdate(productId, bodyUpdate, {
     new: isNew,
   });
@@ -82,6 +91,9 @@ const queryProduct = async ({ query, limit, skip }) => {
     .lean()
     .exec();
 };
+const getProductById = async (productId) => {
+  return await product.findOne({ _id: convertToObjectIdMongo(productId) });
+};
 module.exports = {
   getAllDraftForShop,
   updatePublishProductByShop,
@@ -91,4 +103,5 @@ module.exports = {
   findAllProduct,
   findProductById,
   updateProductById,
+  getProductById,
 };

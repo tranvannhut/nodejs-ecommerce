@@ -37,7 +37,7 @@ const discountSchema = new Schema(
   },
   {
     timestamps: true,
-    collection: COLLECTION_NAME, 
+    collection: COLLECTION_NAME,
   },
 );
 module.exports = model(DOCUMENT_NAME, discountSchema);

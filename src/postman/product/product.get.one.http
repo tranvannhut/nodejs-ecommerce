@@ -1,5 +1,5 @@
 ### login
-@url_dev=http://localhost:3052/v1/api  
+@url_dev=http://localhost:3000/v1/api  
 GET {{url_dev}}/product/65b4e9a4eaa196bb00c1b699
 x-api-key: eb13f5ba9c630690d727366e3ed642ec3544c16f0d49b17c9944fc393fdbea7700dfecb1ed77a5d811bf1441092e787227e2056733a52f208c0449122cac9a47
 # x-client-id : 65b8669e984e8bd12f27664b

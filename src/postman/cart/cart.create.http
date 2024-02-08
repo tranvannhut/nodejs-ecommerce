@@ -1,0 +1,23 @@
+### login
+@url_dev=http://localhost:3000/v1/api  
+POST {{url_dev}}/cart
+Content-Type: application/json
+x-api-key: eb13f5ba9c630690d727366e3ed642ec3544c16f0d49b17c9944fc393fdbea7700dfecb1ed77a5d811bf1441092e787227e2056733a52f208c0449122cac9a47
+x-client-id : 65b8669e984e8bd12f27664b
+x-access-token : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWI4NjY5ZTk4NGU4YmQxMmYyNzY2NGIiLCJlbWFpbCI6InNob3BBMUBnbWFpbC5jb20iLCJpYXQiOjE3MDczNjUxNjcsImV4cCI6MTcwNzUzNzk2N30.LBDyNMjYzC5Nyxh94ecCU93M-qnVs0M9QNY0gFQLLG4
+
+{
+      "userId": 101,
+      "product": 
+            {
+                  "productId": "65b8ca0cf7e251e6c6337777",
+                  "shopId":"65b8669e984e8bd12f27664b",
+                  "quantity":4,
+                  "price":10000,
+                  "name":"Jean luxury size M"
+            }
+      
+}
+
+
+

@@ -1,0 +1,14 @@
+### login
+@url_dev=http://localhost:3000/v1/api  
+GET {{url_dev}}/cart
+Content-Type: application/json
+x-api-key: eb13f5ba9c630690d727366e3ed642ec3544c16f0d49b17c9944fc393fdbea7700dfecb1ed77a5d811bf1441092e787227e2056733a52f208c0449122cac9a47
+x-client-id : 65b8669e984e8bd12f27664b
+x-access-token : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NWI4NjY5ZTk4NGU4YmQxMmYyNzY2NGIiLCJlbWFpbCI6InNob3BBMUBnbWFpbC5jb20iLCJpYXQiOjE3MDczNjI0NjMsImV4cCI6MTcwNzUzNTI2M30.3wYHjjT5SHjVGrxx8hdTqytRgQJzKKsndSOXy7r909I
+
+{
+    "userId" : 101
+}
+
+
+

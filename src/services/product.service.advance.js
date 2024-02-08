@@ -66,7 +66,7 @@ class ProductFactory {
       sort,
       limit,
       page,
-      select: ['productName', 'productPrice', 'productThumb'],
+      select: ['productName', 'productPrice', 'productThumb', 'productShop'],
     });
   }
   static async findProductById({ productID, unSelect }) {
@@ -80,6 +80,7 @@ class ProductFactory {
   static async updateUnPublishProduct({ productId, productShop }) {
     return await updateUnPublishProductByShop({ productId, productShop });
   }
+  //
 }
 
 class Product {
